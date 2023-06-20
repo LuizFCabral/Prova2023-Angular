@@ -13,6 +13,13 @@
       "cidade": "New York",
       "loc": "Rua Washington, 446 ",
       "ceo": "Steve"
+    },
+    {
+      "id": 3,
+      "nome": "Lenovo",
+      "cidade": "Indaiatuba",
+      "loc": "Rua Mariano",
+      "ceo": "Jeferson Alvez"
     }
   ]
 }

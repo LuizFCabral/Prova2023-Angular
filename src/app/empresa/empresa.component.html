@@ -50,3 +50,25 @@
     </form>
   </div>
 </div>
+
+<h5 class="card-title mt-5 mb-3">Empresa</h5>
+<table class="col-8 m-auto table table-striped mb-3">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Cidade</th>
+      <th scope="col">Localização</th>
+      <th scope="col">CEO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let empresa of empresas">
+      <th scope="row">{{ empresa.id }}</th>
+      <td>{{ empresa.nome }}</td>
+      <td>{{ empresa.cidade}}</td>
+      <td>{{ empresa.loc }}</td>
+      <td>{{ empresa.ceo }}</td>
+    </tr>
+  </tbody>
+</table>

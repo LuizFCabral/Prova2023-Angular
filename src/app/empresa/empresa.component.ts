@@ -9,7 +9,7 @@ import { EmpresaService } from '../empresa.service';
   styleUrls: ['./empresa.component.css']
 })
 export class EmpresaComponent {
-  empresa: Empresa[] = [];
+  empresas: Empresa[] = [];
   formGroupEmpresa: FormGroup;
 
 
@@ -26,12 +26,25 @@ export class EmpresaComponent {
       })
     }
 
+    ngOnInit(): void {
+      this.getEmpresas();
+    }
+
+    getEmpresas() {
+      this.empresaService.getEmpresas().subscribe({
+        next: (data) => {
+          this.empresas = data;
+          console.log(this.empresas);
+        },
+        error: () => console.log('Error to call endpoint'),
+      });
+    }
 
     save() {
       this.empresaService.save(this.formGroupEmpresa.value).subscribe({
         next: (data) => {
-          this.empresa.push(data);
-          console.log(this.empresa);
+          this.empresas.push(data);
+          console.log(this.empresas);
         },
       });
       this.formGroupEmpresa.reset();
