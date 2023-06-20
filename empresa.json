@@ -1,0 +1,18 @@
+{
+  "empresas": [
+    {
+      "id": 1,
+      "nome": "Eucatex",
+      "cidade": "Salto",
+      "loc": "R. Ribeirão Preto, 909 - Jardim Marilia",
+      "ceo": "Jorge"
+    },
+    {
+      "id": 2,
+      "nome": "Apple",
+      "cidade": "New York",
+      "loc": "Rua Washington, 446 ",
+      "ceo": "Steve"
+    }
+  ]
+}

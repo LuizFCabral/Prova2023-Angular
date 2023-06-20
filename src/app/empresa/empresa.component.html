@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-8 m-auto mt-5">
+    <form [formGroup]="formGroupEmpresa">
+      <div class="mb-3">
+        <label for="nome" class="form-label" autofocus>Nome da Empresa</label>
+        <input
+          type="text"
+          formControlName="nome"
+          class="form-control"
+          id="nome"
+          placeholder="Informe o nome da empresa"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="cidade" class="form-label">Cidade da Empresa</label>
+        <input
+          type="text"
+          formControlName="cidade"
+          class="form-control"
+          id="cidade"
+          placeholder="Informe a cidade da empresa"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="loc" class="form-label">Localização da Empresa</label>
+        <input
+          type="text"
+          formControlName="loc"
+          class="form-control"
+          id="loc"
+          placeholder="Informe a localização da empresa"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="ceo" class="form-label">CEO da Empresa</label>
+        <input
+          type="text"
+          formControlName="ceo"
+          class="form-control"
+          id="ceo"
+          placeholder="Informe o CEO da empresa"
+        />
+      </div>
+
+      <div class="mb-3 d-flex justify-content-end">
+        <button class="btn btn-primary" (click)="save()">Salvar</button>
+      </div>
+    </form>
+  </div>
+</div>
