@@ -50,4 +50,13 @@ export class EmpresaComponent {
       this.formGroupEmpresa.reset();
     }
 
+    remove(empresa: Empresa) {
+      this.empresaService.remove(empresa).subscribe({
+        next: () => {
+          let index = this.empresas.indexOf(empresa);
+          this.empresas.splice(index, 1);
+        },
+      });
+    }
+
 }

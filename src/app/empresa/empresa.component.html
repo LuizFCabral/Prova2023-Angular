@@ -69,6 +69,11 @@
       <td>{{ empresa.cidade}}</td>
       <td>{{ empresa.loc }}</td>
       <td>{{ empresa.ceo }}</td>
+      <td class="d-flex justify-content-center">
+        <button class="btn btn-danger me-2" (click)="remove(empresa)">
+          Excluir
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>
